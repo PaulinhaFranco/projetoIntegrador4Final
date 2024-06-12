@@ -8,5 +8,5 @@ Projeto Integrador módulo 4 - Versão Final
 ### Descrição do Projeto
 
 > O nosso Aplicativo Mobile Android tem como objetivo facilitar o gerenciamento de Ordens de Serviço, neste caso, específico para Empresa Design Bordados.
-O app DesignBordados possibilita o Gerenciamento de Cliente e OS, Cadastro de Clientes e o Cadastro de Ordens de Serviço. Para o Cliente solicitante das OS, 
-oferecemos a função de Pesquisa por OS, onde o mesmo, pode acompanhar seu pedido, visualizando informações de status da entrega, datas e informações adicionais.
+O app DesignBordados possibilita o Gerenciamento de Clientes e Ordens de Serviço, Cadastro de Clientes e o Cadastro de OS.
+>  Para o Cliente solicitante da Ordem de Serviço, oferecemos a função de Pesquisa por número da OS, possibilitando que acompanhe o andamento de seu pedido, visualizando informações do status de entrega, data de entrada e saída, assim como, informações adicionais.
