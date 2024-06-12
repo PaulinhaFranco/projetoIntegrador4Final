@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:scrollbars="vertical"
+    tools:context=".Model.AtvCadOS">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="550dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UnknownIdInLayout,UseCompoundDrawables">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:contentDescription="TODO"
+            app:srcCompat="@drawable/titulotres"
+            tools:ignore="ContentDescription,HardcodedText,MissingConstraints"
+            tools:layout_editor_absoluteX="58dp"
+            tools:layout_editor_absoluteY="70dp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:scrollbarAlwaysDrawVerticalTrack="false"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="TextSizeCheck">
+
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#D7D8DC"
+            android:text="CLIENTE"
+            android:textColor="#3E4045"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <Spinner
+            android:id="@+id/spclienteOS"
+            style="@style/Widget.AppCompat.Spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_border"
+            android:minHeight="48dp" />
+
+        <TextView
+            android:id="@+id/txtcodos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#D7D8DC"
+            android:text="CÓDIGO"
+            android:textColor="#3E4045"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/edtCodOS"
+            android:layout_width="80dp"
+            android:layout_height="34dp"
+            android:background="@drawable/edittext_border"
+            android:ems="10"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#D7D8DC"
+            android:text="NÚMERO DA OS"
+            android:textColor="#3E4045"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/edtnumOS"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/edittext_border"
+            android:ems="10"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#D7D8DC"
+                android:text="Data de Entrada:"
+                android:textColor="#3E4045"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtDataEnt"
+                android:layout_width="0dp"
+                android:layout_height="37dp"
+                android:layout_weight="1"
+                android:background="@drawable/edittext_border"
+                android:ems="10"
+                android:inputType="date"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/edtDatsaida"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#D7D8DC"
+                android:text="Data de Saída:"
+                android:textColor="#3E4045"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtDatasaida"
+                android:layout_width="0dp"
+                android:layout_height="37dp"
+                android:layout_weight="1"
+                android:background="@drawable/edittext_border"
+                android:ems="10"
+                android:inputType="date"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="12dp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#D7D8DC"
+            android:text="STATUS"
+            android:textColor="#3E4045"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <Spinner
+            android:id="@+id/spstatus"
+            style="@style/Widget.AppCompat.Light.Spinner.DropDown.ActionBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_border"
+            android:minHeight="48dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#D7D8DC"
+            android:text="INFORMAÇÕES ADICIONAIS"
+            android:textColor="#3E4045"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtinfAdd"
+            style="@style/Widget.Material3.AutoCompleteTextView.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="93dp"
+            android:background="@drawable/edittext_border"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:minHeight="48dp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.99"
+        tools:ignore="TextSizeCheck">
+
+        <Button
+            android:id="@+id/btnExcluir"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#F46257"
+            android:text="EXCLUIR"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/btnVoltar"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#FF9800"
+            android:text="VOLTAR"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/btnAdd"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#66CC00"
+            android:text="@string/btnAdd"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,InefficientWeight" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+

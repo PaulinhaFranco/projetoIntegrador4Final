@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".Model.AtvClientes"
+    tools:ignore="VisualLintBounds">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.996"
+        tools:ignore="TextSizeCheck">
+
+        <Space
+            android:layout_width="232dp"
+            android:layout_height="54dp" />
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#66CC00"
+            android:text="INSERIR"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,InefficientWeight" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="399dp"
+        android:layout_height="474dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="30dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.402"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="ExtraText,TextSizeCheck">>
+
+        <ListView
+            android:id="@+id/lstCliente"
+            android:layout_width="match_parent"
+            android:layout_height="458dp"
+            android:fadeScrollbars="false"
+            android:scrollbars="vertical" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="3dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:background="#FFFFFF"
+            android:contentDescription="TODO"
+            app:srcCompat="@drawable/cadcliente"
+            tools:ignore="ContentDescription,HardcodedText,MissingConstraints"
+            tools:layout_editor_absoluteX="58dp"
+            tools:layout_editor_absoluteY="70dp" />
+
+
+        <EditText
+            android:id="@+id/editTextClientId"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:autofillHints=""
+            android:background="@drawable/edittext_border"
+            android:drawableStart="@android:drawable/ic_menu_search"
+            android:hint="  Digite o nome do cliente"
+            android:inputType="text"
+            android:minHeight="60dp"
+            android:textColorHint="#546E7A"
+            android:textStyle="italic"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

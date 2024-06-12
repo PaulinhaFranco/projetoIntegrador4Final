@@ -1,0 +1,11 @@
+<!-- res/drawable/edittext_border.xml -->
+<shape xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:ignore="ExtraText">
+    <solid android:color="#FFFFFF" /> <!-- Cor do fundo -->
+    <stroke
+        android:color="#CCCCCC"
+        android:width="3dp" /> <!-- Largura da borda -->
+
+     <!--  <corners android:radius="8dp" />  Raio das bordas arredondadas -->
+</shape>

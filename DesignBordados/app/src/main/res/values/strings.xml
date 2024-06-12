@@ -1,0 +1,24 @@
+<resources>
+
+    <string name="app_name" translatable="false">DBordadOS</string>
+    <string name="btnAdd" translatable="false">INSERIR</string>
+    <string name="btnVoltar" translatable="false">VOLTAR</string>
+    <string name="btnExcluir" translatable="false">EXCLUIR</string>
+
+    <string name="btnLoja" translatable="false">LOJA</string>
+    <string name="btnSC" translatable="false">SOU CLIENTE</string>
+
+
+    <string name="btnOS" translatable="false">ORDEM DE SERVIÇO</string>
+    <string name="btnfc" translatable="false">CLIENTES CADASTRADOS</string>
+
+    <string name="scOS" translatable="false">OS</string>
+
+    <string-array name="status_options">
+        <item>EM ESPERA</item>
+        <item>EM ANDAMENTO</item>
+        <item>FINALIZADA</item>
+    </string-array>
+
+
+</resources>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    tools:context=".Model.AtvPesqOS">
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="356dp"
+        android:layout_height="154dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="428dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UnknownIdInLayout,UseCompoundDrawables">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="match_parent"
+            android:layout_height="164dp"
+            android:background="#FFFFFF"
+            android:contentDescription="TODO"
+            app:srcCompat="@drawable/os"
+            tools:ignore="ContentDescription,HardcodedText,MissingConstraints"
+            tools:layout_editor_absoluteX="58dp"
+            tools:layout_editor_absoluteY="70dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="392dp"
+        android:layout_height="66dp"
+        android:layout_marginBottom="287dp"
+        android:background="@drawable/edittext_border"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="139dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/maquina" />
+
+        <EditText
+            android:id="@+id/edtpesq"
+            style="@style/Widget.Material3.AutoCompleteTextView.FilledBox"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:hint="Informe o Número da OS"
+            android:inputType="text"
+            android:textAlignment="gravity"
+            android:textColorHint="#757575"
+            android:textStyle="italic"
+            tools:ignore="HardcodedText,RtlCompat" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="401dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="15dp"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.99"
+        tools:ignore="TextSizeCheck">
+
+
+        <Button
+            android:id="@+id/btnPesq"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="80dp"
+            android:layout_weight="1"
+            android:backgroundTint="#FF9800"
+            android:text="PESQUISAR"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
